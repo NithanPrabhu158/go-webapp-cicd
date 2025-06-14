@@ -14,7 +14,7 @@ on:
 
 jobs:
 
-  build:
+  builder:
     runs-on: ubuntu-latest
 
     steps:
@@ -32,7 +32,7 @@ jobs:
     - name: Test
       run: go test ./...
   
-  code-quality:
+  code-quality-checker:
     runs-on: ubuntu-latest
 
     steps:
@@ -44,10 +44,10 @@ jobs:
       with:
         version: v1.56.2
   
-  push:
+  dock-img-pusher:
     runs-on: ubuntu-latest
 
-    needs: build
+    needs: builder
 
     steps:
     - name: Checkout repository
@@ -73,7 +73,7 @@ jobs:
   helm-chart-tag-updation:
     runs-on: ubuntu-latest
 
-    needs: push
+    needs: dock-img-pusher
 
     steps:
     - name: Checkout repository
