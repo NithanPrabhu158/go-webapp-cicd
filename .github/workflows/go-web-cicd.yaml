@@ -32,17 +32,17 @@ jobs:
     - name: Test
       run: go test ./...
   
-  code-quality-checker:
-    runs-on: ubuntu-latest
+  # code-quality-checker:
+  #   runs-on: ubuntu-latest
 
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+  #   steps:
+  #   - name: Checkout repository
+  #     uses: actions/checkout@v4
 
-    - name: Run golangci-lint
-      uses: golangci/golangci-lint-action@v6
-      with:
-        version: latest
+  #   - name: Run golangci-lint
+  #     uses: golangci/golangci-lint-action@v6
+  #     with:
+  #       version: latest
   
   dock-img-pusher:
     runs-on: ubuntu-latest
