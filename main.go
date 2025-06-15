@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-// main function
+
 func main() {
     fs := http.FileServer(http.Dir("landing_page"))
     http.Handle("/", http.StripPrefix("/", fs))
