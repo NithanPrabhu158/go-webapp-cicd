@@ -1,4 +1,4 @@
-# GITOPS WITH A GO_WEBAPP
+# GITOPS WITH A GO-WEBAPP
 
 ![Image](https://github.com/user-attachments/assets/6d59bb8c-eff0-4baa-a041-346116d7a793)
 
