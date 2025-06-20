@@ -1,3 +1,7 @@
+# GITOPS WITH A GO_WEBAPP
+
+![Image](https://github.com/user-attachments/assets/6d59bb8c-eff0-4baa-a041-346116d7a793)
+
 # Go web app
 
 This is a simple Static website in Golang. It uses the `net/http` package to serve HTTP requests.
@@ -81,6 +85,7 @@ kubectl get ing  -> copy the dns
 -> paste the dns in the value section and give domain name as anything but make sure to update tht domain name in the Helm chart's ingress.yaml file in source code.
 
 Now you can access the site by the custom domain name in the browser
+
 
 
 # Clean up 
