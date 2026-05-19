@@ -4,7 +4,7 @@ name: go-app-cicd
 
 
 on:
-  push:
+  workflow_dispatch:
     branches:
       - main
     paths-ignore:
